@@ -41,6 +41,6 @@ int main()
         std::cout << "Invalid";
         break;
     }
-
+    system("pause");
     return 0;
 }
