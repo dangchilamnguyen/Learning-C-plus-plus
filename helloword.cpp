@@ -18,5 +18,6 @@ int main()
     c = sqrt(pow(a, 2) + pow(b, 2));
     std::cout << "Cạnh huyền = " << c << '\n';
 
+    system("pause"); // cho cái app exe k bị tắt
     return 0;
 }
