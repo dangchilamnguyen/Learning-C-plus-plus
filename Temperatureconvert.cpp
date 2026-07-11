@@ -29,6 +29,6 @@ int main()
     {
         std::cout << "Invalid";
     }
-
+    system("pause");
     return 0;
 }
