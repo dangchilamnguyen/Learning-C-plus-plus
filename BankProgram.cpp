@@ -20,6 +20,16 @@ int main()
         std::cout << "=================================\n";
         std::cout << "Enter your choice: ";
         std::cin >> choose;
+
+        // User input // int
+        if (std::cin.fail())
+        {
+            std::cin.clear();             // 1. Delete cin error satus
+            std::cin.ignore(10000, '\n'); // 2. Go thourh 10.000 error characters
+            std::cout << "Error: Please enter a number, not letters!\n";
+            continue; // 3. Jump through, start at the top of while loop
+        }
+
         switch (choose)
         {
         case 1:
@@ -39,7 +49,6 @@ int main()
             break;
         }
     }
-    system("pause");
     return 0;
 }
 void balance(double CurrentBalance)
@@ -51,6 +60,13 @@ void deposit(double &CurrentBalance)
     double AddedDeposit;
     std::cout << "Enter amount you want to deposit: ";
     std::cin >> AddedDeposit;
+    if (std::cin.fail())
+    {
+        std::cin.clear();
+        std::cin.ignore(10000, '\n');
+        std::cout << "Error: Please enter a number, not letters!\n";
+        return; // return instead of continue cause inside void function
+    }
     if (AddedDeposit < 0)
     {
         std::cout << "Invalid" << '\n';
@@ -66,9 +82,16 @@ void withdraw(double &CurrentBalance)
     double WithdrawAmount;
     std::cout << "Enter amount you want to withdraw: ";
     std::cin >> WithdrawAmount;
+    if (std::cin.fail())
+    {
+        std::cin.clear();
+        std::cin.ignore(10000, '\n');
+        std::cout << "Error: Please enter a number, not letters!\n";
+        return;
+    }
     if (WithdrawAmount < 0 || WithdrawAmount > CurrentBalance)
     {
-        std::cout << "Invaid" << '\n';
+        std::cout << "Invalid" << '\n';
     }
     else
     {
