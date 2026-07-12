@@ -6,7 +6,7 @@
 int main()
 {
     srand(time(NULL));
-    int num = (rand() % 6) + 1; // number six -> 6 numbers 0->5
+    int num = (rand() % 7) + 1; // number 6 -> 6 numbers 0->6
     // number 100 -> 100 numbers 0->9
     std::cout << num;
     return 0;
