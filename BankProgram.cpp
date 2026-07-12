@@ -8,15 +8,17 @@ void withdraw(double &CurrentBalance);
 int main()
 {
     int choose;
-    double CurrentBalance = 5000.0;
+    double CurrentBalance = 5000.00;
 
     while (true)
     {
-        std::cout << "Choose what action you what to do\n";
+        std::cout << "========== BANK SYSTEM ==========\n";
         std::cout << "1.Show balance\n";
         std::cout << "2.Deposit\n";
         std::cout << "3.Withdraw\n";
         std::cout << "4.Exit\n";
+        std::cout << "=================================\n";
+        std::cout << "Enter your choice: ";
         std::cin >> choose;
         switch (choose)
         {
@@ -51,7 +53,7 @@ void deposit(double &CurrentBalance)
     std::cin >> AddedDeposit;
     if (AddedDeposit < 0)
     {
-        std::cout << "Invaid" << '\n';
+        std::cout << "Invalid" << '\n';
     }
     else
     {
