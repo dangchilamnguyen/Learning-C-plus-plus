@@ -14,7 +14,7 @@ enum menu_option
     QUIT = 6
 };
 
-// Vehicle structure
+// Vehicle struct
 struct vehicle
 {
     string registration;
@@ -39,9 +39,9 @@ void advance_clock(vehicle vehicles[], int vehicle_count);
 
 void print_vehicle(vehicle vehicle);
 
-void print_all_vehicles( vehicle vehicles[], int vehicle_count);
+void print_all_vehicles(vehicle vehicles[], int vehicle_count);
 
-void print_specific_vehicle( vehicle vehicles[], int vehicle_count);
+void print_specific_vehicle(vehicle vehicles[], int vehicle_count);
 
 int main()
 {
