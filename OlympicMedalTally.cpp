@@ -1,5 +1,4 @@
 #include "splashkit.h"
-
 string input_country_name(string country_number);
 int input_medal(string medal);
 
