@@ -1,5 +1,4 @@
 #include "splashkit.h"
-
 // Create a group of choices for the menu
 enum menu_option
 {
