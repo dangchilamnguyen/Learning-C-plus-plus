@@ -1,5 +1,4 @@
 #include "splashkit.h"
-
 // Maximum number of vehicles
 const int MAX_VEHICLES = 100;
 
