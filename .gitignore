@@ -1,3 +1,7 @@
 *.exe
 .vscode/
 tempCodeRunnerFile.cpp
+learn.cpp
+myeasylog.log
+utilities.cpp
+utilities.h
